@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YouTube Video Downloader</title>
-  <link rel="stylesheet" href="/dist/output.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Downloader</title>
+    <link href="/index.css" rel="stylesheet">
 </head>
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+    <div class="container mx-auto p-4">
+        <h1 class="text-2xl font-bold">YouTube Video Downloader</h1>
+        <form id="download-form">
+            <input type="text" id="youtube-url" placeholder="Enter YouTube URL" class="border p-2">
+            <button type="submit" class="bg-blue-500 text-white p-2">Download</button>
+        </form>
+        <div id="status" class="mt-4"></div>
+    </div>
+    <script src="/script.js"></script>
 </body>
 </html>
