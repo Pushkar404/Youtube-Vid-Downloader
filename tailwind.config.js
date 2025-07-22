@@ -1,5 +1,5 @@
-export default {
-  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
+module.exports = {
+  content: ['./src/**/*.{html,js}', './index.html'],
   theme: {
     extend: {},
   },
